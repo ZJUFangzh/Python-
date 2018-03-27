@@ -17,4 +17,4 @@ def generate(n, many=1, where=None):
     return gene
 
 
-print(generate(20, 200))
+#print(generate(20, 200))
