@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>联系我们</title>
+</head>
+<body>
+<form action="/update"  method="POST">
+	姓名：<input type="text"  name = "name">
+	<br>
+	邮箱：<input type="text"  name = "mail">
+	<br>
+	留言：<input type="text"  name = "word">
+	<br>
+	<button type="submit">提交</button> &nbsp;
+
+	<hr>
+	请尽情留言吧！
+	<hr>
+</form>
+<form   method="GET">
+{% for msg in mess %}
+序号：{{msg[0]}}<br>
+姓名：{{msg[1]}}<br>
+邮箱：{{msg[2]}}<br>
+留言：{{msg[3]}}<br>
+时间：{{msg[4]}}<br>
+<hr>
+{% endfor %}
+
+
+</form>
+
+
+</body>
+
+</html>
